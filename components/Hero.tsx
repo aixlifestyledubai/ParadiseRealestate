@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
   return (
     <>
       <section className="relative h-screen w-full overflow-hidden bg-primary">
-        {/* Background Image with Zoom Effect */}
+        {/* Background Video with Zoom Effect */}
         <div className="absolute inset-0">
           <motion.div
             initial={{ scale: 1.2, opacity: 0 }}
@@ -28,11 +28,21 @@ export const Hero: React.FC = () => {
             transition={{ duration: 1.5, ease: "easeOut" }}
             className="w-full h-full"
           >
-            <img
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop"
-              alt="Luxury Estate"
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
               className="w-full h-full object-cover"
-            />
+            >
+              <source src="/videos/hero-banner.mp4" type="video/mp4" />
+              {/* Fallback image if video fails */}
+              <img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop"
+                alt="Luxury Estate"
+                className="w-full h-full object-cover"
+              />
+            </video>
           </motion.div>
           {/* Overlays */}
           <div className="absolute inset-0 bg-primary/20" />
