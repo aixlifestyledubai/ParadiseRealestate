@@ -34,7 +34,7 @@ export const Navbar: React.FC = () => {
         <img
           src="/images/paradise-logo.png"
           alt="Paradise RealEstate"
-          className="h-16 md:h-24 w-auto transition-transform hover:scale-105"
+             className="h-48 md:h-48 w-auto transition-transform hover:scale-105"
           loading="lazy"
         />
       </div>
