@@ -101,21 +101,6 @@ export const Hero: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Stats Bar (Below Hero) */}
-      <div className="bg-[#0f213a] border-t border-white/5 relative z-20 py-10 shadow-2xl">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-wrap justify-center md:justify-around gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/5">
-            {stats.map((stat, idx) => (
-              <FadeIn key={stat.id} delay={0.2 + (idx * 0.1)} direction="up" className="flex-1 min-w-[200px] pt-4 md:pt-0 group cursor-default">
-                <div className="flex flex-col items-center transform transition-transform duration-300 group-hover:-translate-y-1">
-                  <span className="text-3xl md:text-5xl font-serif text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 mb-2">{stat.value}</span>
-                  <span className="text-xs md:text-sm text-accent uppercase tracking-widest font-semibold">{stat.label}</span>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </div>
     </>
   );
 };

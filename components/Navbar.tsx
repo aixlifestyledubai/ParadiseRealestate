@@ -30,11 +30,11 @@ export const Navbar: React.FC = () => {
   return (
     <>
       {/* Logo - Separate from navbar */}
-      <div className="absolute top-6 left-6 z-50 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 md:top-6 md:left-6 md:translate-x-0 z-50 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
         <img
           src="/images/paradise-logo.png"
           alt="Paradise RealEstate"
-          className="h-25 md:h-28 w-auto transition-transform hover:scale-105"
+          className="h-16 md:h-24 w-auto transition-transform hover:scale-105"
           loading="lazy"
         />
       </div>
