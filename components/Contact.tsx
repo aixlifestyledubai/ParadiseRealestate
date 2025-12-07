@@ -92,20 +92,10 @@ export const Contact: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-serif font-medium mb-1">Corporate Office</h4>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    Paradise RealEstate Towers, #130/1, Ulsoor Road,<br />
-                    Bengaluru, Karnataka - 560 042
+                    Office No 20, GR Floor, Al Aamra Valley,<br />
+                    Al Helio Ajman Eastern Sector,<br />
+                    Near MacD, Ajman - U.A.E
                   </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 group">
-                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-accent/20 group-hover:border-accent/40 transition-all duration-300 flex-shrink-0">
-                  <Phone className="text-accent w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-serif font-medium mb-1">Call Us</h4>
-                  <p className="text-gray-400 text-sm mb-1">+971 50 371 7590</p>
-                  <p className="text-gray-500 text-xs">Mon - Sat, 9:00 AM - 6:00 PM</p>
                 </div>
               </div>
 
@@ -186,7 +176,7 @@ export const Contact: React.FC = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors"
-                    placeholder="+971 50 371 7590"
+                    placeholder="+971 12 345 6789"
                   />
                 </div>
 

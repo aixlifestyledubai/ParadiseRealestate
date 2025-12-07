@@ -29,6 +29,16 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
+      {/* Logo - Separate from navbar */}
+      <div className="absolute top-6 left-6 z-50 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        <img
+          src="/images/paradise-logo.png"
+          alt="Paradise RealEstate"
+          className="h-25 md:h-28 w-auto transition-transform hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 flex justify-center ${scrolled ? 'py-4' : 'py-6'
           }`}
@@ -37,22 +47,12 @@ export const Navbar: React.FC = () => {
           className={`
                 relative px-6 py-3 transition-all duration-500 
                 ${scrolled
-              ? 'w-[90%] md:w-[85%] bg-primary/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full'
-              : 'w-full container bg-transparent border-transparent'
+              ? 'w-[90%] md:w-[70%] bg-primary/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full'
+              : 'w-auto bg-transparent border-transparent'
             }
-                flex items-center justify-between text-white
+                flex items-center justify-center text-white
             `}
         >
-          {/* Logo */}
-          <div className="flex items-center gap-2 pl-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img
-              src="/images/paradise-logo.png"
-              alt="Paradise RealEstate"
-              className="h-16 w-auto"
-              loading="lazy"
-            />
-          </div>
-
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
@@ -68,8 +68,8 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* Actions */}
-          <div className="hidden md:flex items-center space-x-4 pr-2">
-            <button className="p-2 hover:bg-white/10 rounded-full transition-colors text-white/80 hover:text-white">
+          <div className="flex items-center space-x-4">
+            <button className="hidden md:block p-2 hover:bg-white/10 rounded-full transition-colors text-white/80 hover:text-white">
               <Search className="w-4 h-4" />
             </button>
             <ExpandableScreen
@@ -79,7 +79,7 @@ export const Navbar: React.FC = () => {
               animationDuration={0.4}
             >
               <ExpandableScreenTrigger>
-                <div className="flex items-center gap-2 bg-gradient-to-r from-accent to-[#b08d48] hover:shadow-lg hover:shadow-accent/20 text-primary font-bold px-6 py-2.5 rounded-full transition-all duration-300 transform hover:-translate-y-0.5 text-sm cursor-pointer">
+                <div className="hidden md:flex items-center gap-2 bg-gradient-to-r from-accent to-[#b08d48] hover:shadow-lg hover:shadow-accent/20 text-primary font-bold px-6 py-2.5 rounded-full transition-all duration-300 transform hover:-translate-y-0.5 text-sm cursor-pointer">
                   <Phone className="w-3 h-3" />
                   <span>Enquire</span>
                 </div>
@@ -90,15 +90,16 @@ export const Navbar: React.FC = () => {
             </ExpandableScreen>
           </div>
 
-          {/* Mobile Toggle */}
-          <button
-            className="md:hidden p-2 text-white"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <Menu className="w-6 h-6" />
-          </button>
         </div>
       </nav>
+
+      {/* Mobile Menu Toggle - Fixed Position */}
+      <button
+        className="md:hidden fixed top-6 right-6 z-50 p-2 text-white bg-primary/50 backdrop-blur-sm rounded-full border border-white/10"
+        onClick={() => setMobileMenuOpen(true)}
+      >
+        <Menu className="w-6 h-6" />
+      </button>
 
       {/* Mobile Menu Overlay */}
       <AnimatePresence>

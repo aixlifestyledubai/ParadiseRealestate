@@ -5,25 +5,25 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-primary text-white border-t border-white/10">
       <div className="container mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
 
           {/* Brand Column */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="space-y-4">
             <img
               src="/images/paradise-logo.png"
               alt="Paradise RealEstate"
-              className="h-16 w-auto"
+              className="h-32 md:h-36 w-auto"
               loading="lazy"
             />
             <p className="text-sm text-gray-400 leading-relaxed max-w-md">
               Curating refined living experiences that blend elegance, sustainability, and modern comfort. Discover your next sanctuary with our bespoke real estate portfolio.
             </p>
-            <p className="text-gray-400 mb-6 leading-relaxed text-sm pr-10">
+            <p className="text-gray-400 mb-6 leading-relaxed text-sm">
               Paradise RealEstate Limited<br />
-              #130/1, Ulsoor Road,<br />
-              Bengaluru - 560 042<br />
-              Email: Info@preuae.com<br />
-              Call: +971 50 371 7590
+              Office No 20, GR Floor, Al Aamra Valley,<br />
+              Al Helio Ajman Eastern Sector,<br />
+              Near MacD, Ajman - U.A.E<br />
+              Email: Info@preuae.com
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-accent transition-colors"><Facebook size={20} /></a>
@@ -31,32 +31,6 @@ export const Footer: React.FC = () => {
               <a href="#" className="text-gray-400 hover:text-accent transition-colors"><Linkedin size={20} /></a>
               <a href="#" className="text-gray-400 hover:text-accent transition-colors"><Youtube size={20} /></a>
             </div>
-          </div>
-
-          {/* Links Column */}
-          <div>
-            <h4 className="text-lg font-serif font-bold mb-6 text-accent">Projects</h4>
-            <ul className="space-y-3 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Bengaluru</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Chennai</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Kochi</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Pune</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Mumbai</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Hyderabad</a></li>
-            </ul>
-          </div>
-
-          {/* Links Column */}
-          <div>
-            <h4 className="text-lg font-serif font-bold mb-6 text-accent">Quick Links</h4>
-            <ul className="space-y-3 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Media Assets</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Sustainability</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Leadership</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Testimonials</a></li>
-            </ul>
           </div>
 
           {/* Newsletter */}

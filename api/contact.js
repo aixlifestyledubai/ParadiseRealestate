@@ -127,8 +127,6 @@ This inquiry was submitted through the Paradise RealEstate website contact form.
               In the meantime, feel free to reach out to us directly:
             </p>
             <ul style="color: #333; font-size: 16px; line-height: 1.8;">
-              <li>Phone: +971 50 371 7590</li>
-              <li>WhatsApp: +971 50 371 7590</li>
               <li>Email: Info@preuae.com</li>
             </ul>
             <p style="color: #333; font-size: 16px; line-height: 1.6;">

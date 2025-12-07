@@ -103,7 +103,7 @@ export const EnquiryFormContent: React.FC = () => {
         <div className="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-white/20 space-y-4">
           <div className="flex items-center gap-3">
             <Phone className="w-5 h-5 text-[#C5A059]" />
-            <span className="text-white">+971 50 371 7590</span>
+            <span className="text-white">+971 12 345 678</span>
           </div>
           <div className="flex items-center gap-3">
             <Mail className="w-5 h-5 text-[#C5A059]" />
@@ -111,7 +111,7 @@ export const EnquiryFormContent: React.FC = () => {
           </div>
           <div className="flex items-center gap-3">
             <MapPin className="w-5 h-5 text-[#C5A059]" />
-            <span className="text-white text-sm">Paradise RealEstate Towers, Bengaluru</span>
+            <span className="text-white text-sm">Office No 20, Al Aamra Valley, Ajman - U.A.E</span>
           </div>
         </div>
       </div>
@@ -166,7 +166,7 @@ export const EnquiryFormContent: React.FC = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="+971 50 371 7590"
+                  placeholder="+971 12 345 6789"
                   className="w-full px-4 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#C5A059] transition-all text-sm h-10"
                 />
               </div>
