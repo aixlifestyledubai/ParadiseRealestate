@@ -45,9 +45,9 @@ export const Navbar: React.FC = () => {
       >
         <div
           className={`
-                relative px-6 py-3 transition-all duration-500 
+                relative px-4 md:px-6 py-2 md:py-3 transition-all duration-500 
                 ${scrolled
-              ? 'w-[90%] md:w-[70%] bg-primary/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full'
+              ? 'w-[70%] md:w-[70%] bg-primary/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full'
               : 'w-auto bg-transparent border-transparent'
             }
                 flex items-center justify-center text-white

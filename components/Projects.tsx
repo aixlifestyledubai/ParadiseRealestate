@@ -80,7 +80,7 @@ export const Projects: React.FC = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header Section */}
-        <div className="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
+        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end mb-16 gap-8">
           <FadeIn>
             <div className="flex items-center gap-2 mb-2">
               <span className="h-[1px] w-8 bg-accent inline-block"></span>
@@ -94,13 +94,13 @@ export const Projects: React.FC = () => {
             </p>
           </FadeIn>
 
-          <FadeIn delay={0.2} direction="left">
-            <div className="flex flex-wrap gap-2 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm border border-gray-200/60">
+          <FadeIn delay={0.2} direction="left" className="w-full lg:w-auto flex justify-center lg:justify-end">
+            <div className="flex gap-1.5 bg-white/80 backdrop-blur-sm p-1 rounded-full shadow-sm border border-gray-200/60 overflow-x-auto scrollbar-hide">
               {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`relative px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide transition-colors duration-300 z-10 ${activeCategory === cat ? 'text-white' : 'text-gray-500 hover:text-primary'
+                  className={`relative px-3 md:px-5 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold tracking-wide transition-colors duration-300 z-10 whitespace-nowrap ${activeCategory === cat ? 'text-white' : 'text-gray-500 hover:text-primary'
                     }`}
                 >
                   {activeCategory === cat && (
