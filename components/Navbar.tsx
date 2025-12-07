@@ -40,14 +40,14 @@ export const Navbar: React.FC = () => {
       </div>
 
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 flex justify-center ${scrolled ? 'py-4' : 'py-6'
+        className={`hidden md:flex fixed top-0 left-0 w-full z-50 transition-all duration-500 justify-center ${scrolled ? 'py-4' : 'py-6'
           }`}
       >
         <div
           className={`
-                relative px-4 md:px-6 py-2 md:py-3 transition-all duration-500 
+                relative px-6 py-3 transition-all duration-500 
                 ${scrolled
-              ? 'w-[70%] md:w-[70%] bg-primary/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full'
+              ? 'w-[70%] bg-primary/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full'
               : 'w-auto bg-transparent border-transparent'
             }
                 flex items-center justify-center text-white
