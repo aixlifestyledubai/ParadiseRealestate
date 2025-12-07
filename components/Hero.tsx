@@ -53,23 +53,7 @@ export const Hero: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center items-center text-center pt-20">
 
-          {/* 50 Years Badge */}
-          <FadeIn delay={0.2} direction="down">
-            <div className="relative w-32 h-32 md:w-40 md:h-40 border border-accent/40 rounded-full flex items-center justify-center mb-8 backdrop-blur-md bg-primary/20 mx-auto group hover:scale-105 transition-transform duration-500 cursor-default">
-              <div className="absolute inset-2 border border-accent/20 rounded-full group-hover:border-accent/60 transition-colors duration-500"></div>
-              {/* Rotating border effect */}
-              <div className="absolute inset-0 rounded-full border-t border-accent/80 animate-spin-slow opacity-50"></div>
-
-              <div className="flex flex-col items-center">
-                <span className="text-4xl md:text-5xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-b from-accent to-[#b08d48]">50</span>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-white mt-1 font-medium">Years</span>
-                <span className="text-[8px] text-accent/80 mt-1 font-serif italic">Since 1975</span>
-              </div>
-              <Sparkles className="absolute -top-1 -right-1 text-accent w-5 h-5 animate-pulse" />
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.4}>
+          <FadeIn delay={0.2}>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-2xl">
               The River of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C5A059] via-[#E5C585] to-[#C5A059] italic pr-2">Life</span>
             </h1>
@@ -77,7 +61,7 @@ export const Hero: React.FC = () => {
 
           <div className="max-w-3xl mx-auto mb-10 min-h-[80px]">
             <TextGenerateEffect
-              words="Always flowing forward. Celebrating 50 years of Puravankara with sustainable luxury and timeless elegance."
+              words="Always flowing forward. Experience sustainable luxury and timeless elegance."
               className="text-gray-200 text-lg md:text-2xl font-light leading-relaxed drop-shadow-md font-sans"
               delay={0.8}
             />
