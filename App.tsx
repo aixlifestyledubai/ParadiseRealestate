@@ -25,7 +25,7 @@ function App() {
       {/* Floating Action Button (WhatsApp) */}
       <div className="fixed bottom-8 right-8 z-40 flex flex-col space-y-4">
         <a
-          href="https://wa.me/#?text=Hi!%20Can%20I%20get%20more%20information."
+          href="https://wa.me/068865797?text=Hi!%20Can%20I%20get%20more%20information."
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform duration-300 flex items-center justify-center"

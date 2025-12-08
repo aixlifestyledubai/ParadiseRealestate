@@ -108,6 +108,16 @@ export const Contact: React.FC = () => {
                   <p className="text-gray-400 text-sm">Info@preuae.com</p>
                 </div>
               </div>
+
+              <div className="flex items-start gap-4 group">
+                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-accent/20 group-hover:border-accent/40 transition-all duration-300 flex-shrink-0">
+                  <Phone className="text-accent w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-serif font-medium mb-1">Call Us</h4>
+                  <p className="text-gray-400 text-sm">(06) 886 57 97</p>
+                </div>
+              </div>
             </FadeIn>
           </div>
 

@@ -19,11 +19,12 @@ export const Footer: React.FC = () => {
               Curating refined living experiences that blend elegance, sustainability, and modern comfort. Discover your next sanctuary with our bespoke real estate portfolio.
             </p>
             <p className="text-gray-400 mb-6 leading-relaxed text-sm">
-              Paradise RealEstate Limited<br />
+              Paradise RealEstate LLC<br />
               Office No 20, GR Floor, Al Aamra Valley,<br />
               Al Helio Ajman Eastern Sector,<br />
               Near MacD, Ajman - U.A.E<br />
-              Email: Info@preuae.com
+              Email: Info@preuae.com<br />
+              Contact: (06) 886 57 97
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-accent transition-colors"><Facebook size={20} /></a>
@@ -52,7 +53,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-          <p>© 2024 Paradise RealEstate Limited. All Rights Reserved.</p>
+          <p>© 2024 Paradise RealEstate LLC. All Rights Reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white">Privacy Policy</a>
             <a href="#" className="hover:text-white">Disclaimer</a>
