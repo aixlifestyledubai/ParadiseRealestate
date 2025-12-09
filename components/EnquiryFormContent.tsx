@@ -103,7 +103,7 @@ export const EnquiryFormContent: React.FC = () => {
         <div className="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-white/20 space-y-4">
           <div className="flex items-center gap-3">
             <Phone className="w-5 h-5 text-[#C5A059]" />
-            <span className="text-white">+971 12 345 678</span>
+            <span className="text-white">(06) 886 57 97</span>
           </div>
           <div className="flex items-center gap-3">
             <Mail className="w-5 h-5 text-[#C5A059]" />
