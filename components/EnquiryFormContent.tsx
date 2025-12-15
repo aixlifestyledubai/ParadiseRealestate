@@ -77,29 +77,6 @@ export const EnquiryFormContent: React.FC = () => {
           our team is here to guide you every step of the way.
         </p>
 
-        <div className="space-y-4 sm:space-y-6 pt-6">
-          <div className="flex gap-3 sm:gap-4">
-            <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/10 flex items-center justify-center">
-              <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-[#C5A059]" />
-            </div>
-            <div>
-              <p className="text-sm sm:text-base text-gray-300 leading-[150%]">
-                50+ years of excellence in delivering sustainable luxury homes across 9 cities.
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-3 sm:gap-4">
-            <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/10 flex items-center justify-center">
-              <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-[#C5A059]" />
-            </div>
-            <div>
-              <p className="text-sm sm:text-base text-gray-300 leading-[150%]">
-                Join 80,000+ happy families who trust Paradise RealEstate for their dream homes.
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div className="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-white/20 space-y-4">
           <div className="flex items-center gap-3">
             <Phone className="w-5 h-5 text-[#C5A059]" />

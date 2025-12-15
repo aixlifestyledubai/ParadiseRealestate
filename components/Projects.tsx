@@ -148,53 +148,8 @@ export const Projects: React.FC = () => {
                       className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                     />
 
-                    {/* Elegant Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-
-                    {/* Status Tag */}
-                    <div className="absolute top-6 right-6">
-                      <div className={`
-                                backdrop-blur-md px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest border rounded-full
-                                ${project.status === 'Completed' ? 'bg-emerald-900/40 border-emerald-500/30 text-emerald-100' : ''}
-                                ${project.status === 'Ongoing' ? 'bg-amber-900/40 border-amber-500/30 text-amber-100' : ''}
-                                ${project.status === 'Upcoming' ? 'bg-blue-900/40 border-blue-500/30 text-blue-100' : ''}
-                            `}>
-                        {project.status}
-                      </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="absolute bottom-0 left-0 w-full p-8 text-white translate-z-20">
-                      <div className="transform transition-transform duration-500 group-hover:-translate-y-2">
-                        <p className="text-accent text-xs font-bold uppercase tracking-widest mb-2">{project.type}</p>
-                        <h3 className="text-3xl font-serif font-bold mb-2 group-hover:text-accent transition-colors duration-300">{project.title}</h3>
-                        <div className="flex items-center text-gray-300 mb-4">
-                          <MapPin className="w-4 h-4 mr-2 text-accent" />
-                          <span className="text-sm font-medium tracking-wide">{project.location}</span>
-                        </div>
-                      </div>
-
-                      {/* Expandable Section */}
-                      <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]">
-                        <div className="overflow-hidden">
-                          <div className="border-t border-white/20 pt-4 mt-2 flex items-center justify-between">
-                            <div>
-                              {project.priceStart ? (
-                                <>
-                                  <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-0.5">Starting From</p>
-                                  <p className="text-lg font-serif text-white">{project.priceStart}</p>
-                                </>
-                              ) : (
-                                <p className="text-sm text-gray-400">View Project Details</p>
-                              )}
-                            </div>
-                            <button className="bg-white text-primary p-3 rounded-full hover:bg-accent transition-colors duration-300">
-                              <ExternalLink size={18} />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    {/* Subtle Gradient Overlay for hover effect only */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-30 transition-opacity duration-500" />
                   </div>
                 </Card3D>
               </motion.div>
